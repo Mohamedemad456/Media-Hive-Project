@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #89A8B2;
+    --secondary-color: #B3C8CF;
+    --background-color: #E5E1DA;
+    --text-color: #F1F0E8;
+}
+  
+
+body{
+    background:linear-gradient(to right,var(--primary-color),var(--text-color));
+}
+
+
+.link-effect {
+	a {
+		color: black;
+    margin: 0px 10px;
+		padding: 10px 0;
+		position: relative;
+		transition: all 0.3s ease-out 0.1s;
+		&::after {
+			height: 3px;
+			width: 100%;
+			background: black;
+			content: "";
+			position: absolute;
+			right: 0; /* Start from the right */
+			bottom: 0;
+			transform: scaleX(0); /* Scale horizontally */
+			transform-origin: right; /* Animate from right to left */
+			transition: transform 0.3s ease-out;
+		}
+		&:hover {
+			&::after {
+				transform: scaleX(1); /* Expand to full width */
+			}
+		}
+	}
+}
