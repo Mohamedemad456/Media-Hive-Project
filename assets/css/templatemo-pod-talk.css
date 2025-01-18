@@ -3,15 +3,15 @@
 -----------------------------------------*/
 :root {
     --white-color: #ffffff;
-    --primary-color: #00cc99;
-    --secondary-color: #0066cc;
+    --primary-color: #df9755;
+    --secondary-color: #eb5a3c;
     --section-bg-color: #f0f8ff;
-    --custom-btn-bg-color: #0066cc;
-    --custom-btn-bg-hover-color: #00cc99;
+    --custom-btn-bg-color: #eb5a3c;
+    --custom-btn-bg-hover-color: #df9755;
     --dark-color: #000000;
     --p-color: #717275;
-    --border-color: #7fffd4;
-    --link-hover-color: #0066cc;
+    --border-color: #e7a262;
+    --link-hover-color: #eb5a3c;
 
     --body-font-family: "Montserrat", sans-serif;
     --title-font-family: "Sono", sans-serif;
@@ -128,7 +128,7 @@ strong {
 }
 
 /*---------------------------------------
-  SECTION               
+    SECTION
 -----------------------------------------*/
 .section-title-wrap {
     position: relative;
@@ -186,14 +186,14 @@ main {
 }
 
 /*---------------------------------------
-  CUSTOM ICON COLOR               
+    CUSTOM ICON COLOR
 -----------------------------------------*/
 .custom-icon {
     color: var(--primary-color);
 }
 
 /*---------------------------------------
-  CUSTOM BUTTON               
+    CUSTOM BUTTON
 -----------------------------------------*/
 .custom-btn {
     background: var(--custom-btn-bg-color);
@@ -249,11 +249,11 @@ main {
 }
 
 /*---------------------------------------
-  SITE HEADER              
+    SITE HEADER
 -----------------------------------------*/
 .site-header {
     background-image: url("../images/templatemo-wave-header.jpg"),
-        linear-gradient(#348cd2, #ffffff);
+        linear-gradient(#eb5a3c, #ffffff);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -266,7 +266,7 @@ main {
 }
 
 /*---------------------------------------
-  NAVIGATION              
+    NAVIGATION
 -----------------------------------------*/
 .navbar {
     background-color: transparent;
@@ -324,7 +324,7 @@ main {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
-    color: var(--secondary-color);
+    color: black;
 }
 
 .navbar .dropdown-menu {
@@ -476,11 +476,11 @@ main {
 }
 
 /*---------------------------------------
-  CAROUSEL        
+    CAROUSEL
 -----------------------------------------*/
 .hero-section {
     background-image: url("../images/templatemo-wave-banner.jpg"),
-        linear-gradient(#348cd2, #ffffff);
+        linear-gradient(#eb5a3c, #ffffff);
     background-repeat: no-repeat;
     background-size: 108% 76%;
     background-position: top;
@@ -602,7 +602,7 @@ main {
 }
 
 /*---------------------------------------
-  CUSTOM BLOCK              
+    CUSTOM BLOCK
 -----------------------------------------*/
 .custom-block {
     border: 2px solid var(--primary-color);
@@ -797,7 +797,7 @@ main {
 }
 
 /*---------------------------------------
-  PROIFLE BLOCK               
+    PROFILE BLOCK
 -----------------------------------------*/
 .profile-block {
     margin-top: 10px;
@@ -827,7 +827,7 @@ main {
 }
 
 /*---------------------------------------
-  ABOUT & TEAM SECTION               
+    ABOUT & TEAM SECTION
 -----------------------------------------*/
 .about-image {
     border-radius: var(--border-radius-medium);
@@ -850,7 +850,7 @@ main {
 }
 
 /*---------------------------------------
-  PAGINATION               
+    PAGINATION
 -----------------------------------------*/
 .pagination {
     border: 1px solid #dee2e6;
@@ -885,7 +885,7 @@ main {
 }
 
 /*---------------------------------------
-  CONTACT               
+    CONTACT
 -----------------------------------------*/
 .contact-info p strong {
     font-family: var(--title-font-family);
@@ -912,7 +912,7 @@ main {
 }
 
 /*---------------------------------------
-  SUBSCRIBE FORM               
+    SUBSCRIBE FORM
 -----------------------------------------*/
 .subscribe-form-wrap {
     border: 1px solid var(--white-color);
@@ -982,7 +982,7 @@ main {
 }
 
 /*---------------------------------------
-  SEARCH FORM               
+    SEARCH FORM
 -----------------------------------------*/
 .search-form .form-control {
     border: 0;
@@ -1002,11 +1002,11 @@ main {
 }
 
 /*---------------------------------------
-  SITE FOOTER              
+    SITE FOOTER
 -----------------------------------------*/
 .site-footer {
     background-image: url("../images/templatemo-wave-footer.jpg"),
-        linear-gradient(#ffffff, #348cd2);
+        linear-gradient(#ffffff, #eb5a3c);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1066,7 +1066,7 @@ main {
 }
 
 /*---------------------------------------
-  SOCIAL ICON               
+    SOCIAL ICON
 -----------------------------------------*/
 .social-icon {
     margin: 0;
@@ -1118,7 +1118,7 @@ main {
     }
 
     &:hover {
-        background-color: #007bff;
+        background-color: #eb5a3c;
         color: white;
         transform: scale(1.03);
     }
