@@ -5,16 +5,17 @@
     --white-color: #ffffff;
     --primary-color: #df9755;
     --secondary-color: #eb5a3c;
-    --section-bg-color: #f0f8ff;
+    --section-bg-color: #fbf5dd;
     --custom-btn-bg-color: #eb5a3c;
     --custom-btn-bg-hover-color: #df9755;
+    --background-color: #fbf5dd;
     --dark-color: #000000;
     --p-color: #717275;
     --border-color: #e7a262;
     --link-hover-color: #eb5a3c;
 
-    --body-font-family: "Montserrat", sans-serif;
-    --title-font-family: "Sono", sans-serif;
+    --body-font-family: "Tajawal", sans-serif;
+    --title-font-family: "Tajawal", sans-serif;
 
     --h1-font-size: 58px;
     --h2-font-size: 46px;
@@ -37,12 +38,12 @@
 }
 
 body {
-    background-color: var(--white-color);
+    background-color: var(--background-color);
     font-family: var(--body-font-family);
 }
 
 /*---------------------------------------
-  TYPOGRAPHY               
+    TYPOGRAPHY
 -----------------------------------------*/
 
 h2,
@@ -306,7 +307,8 @@ main {
 
 .navbar-nav .nav-link {
     display: inline-block;
-    color: var(--section-bg-color);
+    /* color: var(--section-bg-color); */
+    color: black;
     font-family: var(--title-font-family);
     font-size: var(--menu-font-size);
     font-weight: var(--font-weight-medium);
@@ -325,6 +327,7 @@ main {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
     color: black;
+    font-weight: bold;
 }
 
 .navbar .dropdown-menu {
@@ -444,7 +447,7 @@ main {
 }
 
 .navbar-toggler .navbar-toggler-icon {
-    background: var(--white-color);
+    background: black;
     transition: background 10ms 300ms ease;
     display: block;
     width: 30px;
@@ -461,7 +464,7 @@ main {
     position: absolute;
     right: 0;
     left: 0;
-    background: var(--white-color);
+    background: black;
     width: 30px;
     height: 2px;
     content: "";
@@ -1183,7 +1186,7 @@ main {
     }
 
     .navbar-nav {
-        background-color: var(--primary-color);
+        /* background-color: var(--primary-color); */
         border-radius: var(--border-radius-medium);
         padding: 30px;
     }

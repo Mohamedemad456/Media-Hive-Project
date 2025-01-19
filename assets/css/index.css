@@ -1,57 +1,53 @@
 :root {
-	--primary-color: #DF9755;
-	--secondary-color: #EB5A3C;
-	--background-color: #FBF5DD;
-	--text-color: #f1f0e8;
-  }
-  
-
-body{
-    background:var(--background-color);
+    --primary-color: #df9755;
+    --secondary-color: #eb5a3c;
+    --background-color: #fbf5dd;
+    --text-color: #f1f0e8;
 }
 
+body {
+    background: var(--background-color);
+}
 
-@media (max-width: 992px) { /* Targets screens smaller than the 'lg' breakpoint (992px) */
-	.offCanvasLinkBorder {
-	  border-bottom: 1px solid; /* Add a solid border */
-	}
-  }
-  
+@media (max-width: 992px) {
+    /* Targets screens smaller than the 'lg' breakpoint (992px) */
+    .offCanvasLinkBorder {
+        border-bottom: 1px solid; /* Add a solid border */
+    }
+}
 
+@media (min-width: 992px) {
+    .link-effect {
+        a {
+            color: black;
+            display: inline-block; /* Restrict width to text content */
+            padding: 10px 0;
+            position: relative;
+            transition: all 0.3s ease-out 0.1s;
 
-  @media (min-width: 992px) {
-	.link-effect {
-	  a {
-		color: black;
-		display: inline-block; /* Restrict width to text content */
-		padding: 10px 0;
-		position: relative;
-		transition: all 0.3s ease-out 0.1s;
-  
-		&::after {
-		  height: 3px;
-		  width: 100%;
-		  background: black;
-		  content: "";
-		  position: absolute;
-		  right: 0; /* Start from the right */
-		  bottom: 0;
-		  transform: scaleX(0); /* Scale horizontally */
-		  transform-origin: right; /* Animate from right to left */
-		  transition: transform 0.3s ease-out;
-		}
-  
-		&:hover {
-		  &::after {
-			transform: scaleX(1); /* Expand to full width */
-		  }
-		}
-	  }
-	}
-  }
-  
+            &::after {
+                height: 3px;
+                width: 100%;
+                background: black;
+                content: "";
+                position: absolute;
+                right: 0; /* Start from the right */
+                bottom: 0;
+                transform: scaleX(0); /* Scale horizontally */
+                transform-origin: right; /* Animate from right to left */
+                transition: transform 0.3s ease-out;
+            }
 
-.offCanvasWhatsappLink{
-	position: fixed;
-	bottom: 47px;
+            &:hover {
+                &::after {
+                    transform: scaleX(1); /* Expand to full width */
+                }
+            }
+        }
+    }
+}
+
+.offCanvasWhatsappLink {
+    position: fixed;
+    bottom: 47px;
 }
