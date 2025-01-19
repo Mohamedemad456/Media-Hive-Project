@@ -95,8 +95,12 @@ body {
 
 
 
-@media (max-width: 992px) {
+@media (max-width: 767px) {
   .direction{
     flex-direction: column-reverse;
   }
+}
+
+.hover:hover{
+  color: #EB5A3C;
 }
