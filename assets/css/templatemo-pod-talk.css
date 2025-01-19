@@ -1010,7 +1010,7 @@ main {
     background-image: url("../images/templatemo-wave-footer.jpg"),
         linear-gradient(#ffffff, #eb5a3c);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
     margin-top: -80px;
     padding-top: 100px;
@@ -1020,7 +1020,7 @@ main {
 .site-footer > .container {
     position: relative;
     top: 50px;
-    padding-top: 100px;
+    /* padding-top: 100px; */
 }
 
 .site-footer-title,
