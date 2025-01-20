@@ -81,6 +81,7 @@ body {
 
 .custom-img{
 	object-fit: cover;
+  border-radius: 20px;
 }
 
 .hero-section2 {
@@ -103,4 +104,23 @@ body {
 
 .hover:hover{
   color: #EB5A3C;
+}
+
+
+
+.custom-service-block {
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius-medium);
+  position: relative;
+  overflow: hidden;
+  padding: 15px;
+  transition: all 0.3s ease;
+  height: fit-content;
+}
+
+.custom-service-block:hover {
+  background: var(--white-color);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  border-color: transparent;
+  transform: translateY(-3px);
 }
