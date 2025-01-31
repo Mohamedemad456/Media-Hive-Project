@@ -641,8 +641,6 @@ main {
 .custom-block-image {
     border-radius: var(--border-radius-medium);
     display: block;
-    /* width: 112px;
-  height: 112px; */
     width: 500px;
     /* height: 200px; */
     object-fit: cover;
