@@ -80,9 +80,21 @@ body {
 
 
 .custom-img{
-	object-fit: cover;
+  max-height: 500px;
+	object-fit: contain;
   border-radius: 20px;
 }
+
+/* .custom-img-2{
+  max-height: 400px;
+  border-radius: 20px;
+}
+
+@media(max-width:576px){
+.custom-img-2{
+  max-height: 250px;
+}
+} */
 
 .hero-section2 {
   background-image: url("../images/templatemo-wave-banner.jpg"),
@@ -93,6 +105,11 @@ body {
   padding-top: 200px;
 }
 
+@media(max-width:576px){
+  .hero-section2{
+    padding-top: 120px;
+  }
+}
 
 
 
@@ -116,11 +133,4 @@ body {
   padding: 15px;
   transition: all 0.3s ease;
   height: fit-content;
-}
-
-.custom-service-block:hover {
-  background: var(--white-color);
-  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
-  border-color: transparent;
-  transform: translateY(-3px);
 }
