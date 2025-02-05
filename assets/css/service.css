@@ -59,7 +59,7 @@ body {
 }
 
 .list-asterisk li::before {
-  content: "*  ";
+  content: "-  ";
 }
 
 .list-hyphen {
@@ -80,7 +80,7 @@ body {
 
 
 .custom-img{
-  max-height: 500px;
+  max-height: 400px;
 	object-fit: contain;
   border-radius: 20px;
 }
@@ -133,4 +133,23 @@ body {
   padding: 15px;
   transition: all 0.3s ease;
   height: fit-content;
+}
+@media(max-width:576px) {
+  .custom-service-block {
+    margin-top: 30%;
+  }
+}
+
+
+
+@media (max-width: 767px) {
+  .custom-service-block {
+    margin-top: 30%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .custom-service-block {
+    width: 35%;
+  }
 }

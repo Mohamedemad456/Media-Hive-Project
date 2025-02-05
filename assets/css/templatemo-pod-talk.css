@@ -276,7 +276,7 @@ main {
     right: 0;
     left: 0;
     z-index: 9;
-    padding-top: 20px;
+    padding-top: 0px;
     padding-bottom: 20px;
 }
 
@@ -286,7 +286,9 @@ main {
 }
 
 .navbar .logo-image {
-    width: 100px;
+    width: 120px;
+        ;
+        height: fit-content;
 }
 
 .logo-image {
