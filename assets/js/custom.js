@@ -49,3 +49,32 @@
         },
     });
 })(window.jQuery);
+
+
+document.addEventListener("DOMContentLoaded", function(){
+    var myOffcanvas = document.getElementById('offcanvasNavbar');
+    var bsOffcanvas = new bootstrap.Offcanvas(myOffcanvas);
+    document.getElementById("navbar-button").addEventListener('click',function (e){
+      e.preventDefault();
+      e.stopPropagation();
+      bsOffcanvas.toggle();
+    });
+    
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault(); // Prevent the default anchor click behavior
+          e.stopPropagation();
+          bsOffcanvas.hide();
+          var targetId = this.getAttribute('href').substring(1); // Get the target ID
+          var targetElement = document.getElementById(targetId);
+      
+          // Scroll to the target element
+          if (targetElement) {
+            targetElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          }
+        });
+      });      
+  });
